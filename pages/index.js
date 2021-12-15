@@ -19,7 +19,8 @@ export default function Home() {
         <h1 className={styles.title}>
           🎄 Advent of Billing 🎁
         </h1>
-        <div className="log grid flex items-center justify-center" hx-get="https://billing.miller.cool/leaderboard" hx-trigger="every 3s">
+        <div className="grid flex">
+          <div className="log items-center justify-center" hx-get="https://billing.miller.cool/log" hx-trigger="every 3s">
           <table>
             <tr>
               <td>Team dalan has <strong>successfully</strong> completed problem 1</td>
@@ -38,6 +39,10 @@ export default function Home() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
           </span> */}
+          </div>
+          <div className="completed items-center justify-center" hx-get="https://billing.miller.cool/completed" hx-trigger="every 3s">
+
+          </div>
         </div>
       </main>
 
