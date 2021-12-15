@@ -21,7 +21,7 @@ export default function Home() {
         </h1>
         <div className="grid flex">
           <div className="log items-center justify-center" hx-get="https://billing.miller.cool/log" hx-trigger="every 3s">
-          <table>
+          {/* <table>
             <tr>
               <td>Team dalan has <strong>successfully</strong> completed problem 1</td>
             </tr>
@@ -34,7 +34,7 @@ export default function Home() {
             <tr>
               <td>Team dalan has successfully completed problem 1</td>
             </tr>
-          </table>
+          </table> */}
         {/* <span className="flex h-3 w-3">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
